@@ -1,15 +1,22 @@
 const container = document.querySelector('#container');
 var grid = document.querySelectorAll('.grid');
+const gridFill = document.getElementsByClassName("grid");
 
-let size = 29
+let size = 40
 let boxWidth = 500 / size
-let path = `width: ${boxWidth}px; height: ${boxWidth}px`
 
 for (let i = 0; i < (size * size) - 1; i++) {
     const grid = document.createElement('div');
     grid.classList.add('grid');
     container.appendChild(grid);
-    grid.setAttribute("style", path);
+    grid.setAttribute("style", `width: ${boxWidth}px; height: ${boxWidth}px`);
+    gridFill[i].addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "black";
+    }, 
+    false
+    )
 }
 
-console.log(path)
+
+
+
