@@ -2,7 +2,7 @@ const container = document.querySelector('#container');
 var grid = document.querySelectorAll('.grid');
 const gridFill = document.getElementsByClassName("grid");
 
-let size = 5
+let size = prompt('Set grid width')
 let boxWidth = 500 / size
 
 for (let i = 0; i < (size * size); i++) {
@@ -12,7 +12,7 @@ for (let i = 0; i < (size * size); i++) {
     grid.setAttribute("style", `width: ${boxWidth}px; height: ${boxWidth}px`);
     gridFill[i].addEventListener("mouseover", (event) => {
         event.target.style.backgroundColor = "black";
-    })
+    });
 }
 
 
