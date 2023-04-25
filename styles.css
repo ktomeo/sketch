@@ -8,6 +8,8 @@ body {
     width: 500px;
     border-width: 5px;
     border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid {
