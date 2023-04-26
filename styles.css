@@ -1,6 +1,10 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    background-color: rgb(72, 235, 180);
 }
 
 #container {
@@ -10,6 +14,7 @@ body {
     border-style: solid;
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .grid {
